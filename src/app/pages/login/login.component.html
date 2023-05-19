@@ -1,0 +1,20 @@
+<div class="container" >
+
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-subtitle>
+        <img mat-card-image class="img-logo" src="./assets/logotyp.png" alt="logotyp">
+      </mat-card-subtitle>
+      <mat-card-title>Logowanie</mat-card-title>
+    </mat-card-header>
+    <mat-form-field>
+      <mat-label>Enter your email</mat-label>
+      <input matInput placeholder="name.surname@netrix.com.pl" [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <button mat-raised-button class="btn-login" color="primary">Zaloguj</button>
+  </mat-card>
+
+
+</div>

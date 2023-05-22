@@ -31,6 +31,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatButtonModule} from "@angular/material/button";
 import {BrowserModule} from "@angular/platform-browser";
+import {MatBadgeModule} from "@angular/material/badge";
 
 
 
@@ -67,7 +68,8 @@ import {BrowserModule} from "@angular/platform-browser";
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatBadgeModule
   ]
 })
 export class MaterialStylesModule { }

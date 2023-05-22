@@ -1,9 +1,9 @@
 <mat-toolbar>
-  <img mat-card-image src="./assets/logotyp.png" alt="logotyp" class="img-logo">
-  <span>Order FOOD </span>
+  <img mat-card-image src="./assets/logotyp.png" alt="logotyp" class="img-logo" routerLink="/homepage">
+  <span style="cursor: pointer" routerLink="/homepage" >Order FOOD </span>
   <mat-icon color="warn">favorite</mat-icon>
-  <button class="btn-menu" mat-flat-button>Kucharze</button>
-  <button class="btn-menu" mat-flat-button>Historia zamówienia</button>
+  <a class="btn-menu" mat-stroked-button routerLink="/bar" routerLinkActive="active-link">Kucharze</a>
+  <a class="btn-menu" mat-stroked-button routerLink="/history" routerLinkActive="active-link">Historia zamówienia</a>
   <span class="spacer"></span>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>logout</mat-icon>
